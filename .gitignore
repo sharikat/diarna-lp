@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.log
+
+# Cache
+.cache/
+node_modules/

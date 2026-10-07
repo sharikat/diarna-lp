@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ديارنا الحديثة - تأجير وبيع معدات ثقيلة</title>
+  <meta name="description" content="الخيار الأول في المملكة. تأجير وبيع سيزر لفت ورافعات شوكية بأفضل الأسعار. فحص دوري شامل، توصيل سريع للرياض، جدة، الدمام وجميع المدن.">
+  <meta name="author" content="ديارنا الحديثة">
+  <meta name="theme-color" content="#ff8c00">
+  <meta property="og:title" content="ديارنا الحديثة - تأجير وبيع معدات ثقيلة">
+  <meta property="og:description" content="الخيار الأول في المملكة. تأجير وبيع سيزر لفت ورافعات شوكية بأفضل الأسعار.">
+  <meta property="og:image" content="https://tajeermodat.com/diarna/assets/images/image03.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root{
+      --clr-primary:#ff8c00;
+      --clr-dark:#1a0e26;
+      --clr-deep:#130c1d;
+      --clr-gradient-from:#6a11cb;
+      --clr-gradient-to:#ff8c00;
+      --clr-accent:#d72638;
+      --radius:12px;
+      --transition:all .3s ease;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    body{font-family:'Cairo',Arial,sans-serif;background:var(--clr-deep);color:#fff;line-height:1.7;font-size:16px}
+    a{color:var(--clr-primary);text-decoration:none;transition:var(--transition)}
+    a:hover{color:#fff}
+
+    /* Hero */
+    .hero{
+      background:linear-gradient(135deg,var(--clr-gradient-from),var(--clr-gradient-to));
+      padding:4rem 1rem;
+      text-align:center;
+    }
+    .hero h1{font-size:2.2rem;margin-bottom:.5rem}
+    .hero p{font-size:1.1rem;max-width:700px;margin:auto}
+    .hero .cta-group{display:flex;gap:.75rem;justify-content:center;margin-top:1.5rem;flex-wrap:wrap}
+    .hero .btn{
+      background:var(--clr-primary);
+      color:#1a0e26;
+      font-weight:700;
+      padding:.75rem 1.5rem;
+      border-radius:8px;
+      display:inline-flex;align-items:center;gap:.5rem;
+      box-shadow:0 4px 15px rgba(255,140,0,.35)
+    }
+    .hero .btn.secondary{background:#fff;color:var(--clr-dark)}
+    .hero .flag{margin-top:1rem;font-size:.9rem;opacity:.9}
+
+    /* Section */
+    section{padding:2.5rem 1rem;max-width:1200px;margin:auto}
+    .section-title{text-align:center;font-size:2rem;margin-bottom:2rem;position:relative}
+    .section-title:after{content:'';display:block;width:60px;height:3px;background:var(--clr-primary);margin:1rem auto}
+
+    /* Equipments */
+    .equipments{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+    .equipment-card{
+      background:var(--clr-dark);
+      border-radius:var(--radius);
+      overflow:hidden;
+      border:1px solid #2a1a3d;
+      transition:var(--transition);
+      display:flex;
+      flex-direction:column;
+    }
+    .equipment-card:hover{border-color:var(--clr-primary);transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.4)}
+    .equipment-card img{width:100%;height:180px;object-fit:cover}
+    .equipment-card .card-body{padding:1rem;flex-grow:1;display:flex;flex-direction:column}
+    .equipment-card .tag{background:var(--clr-primary);color:var(--clr-dark);font-size:.75rem;padding:.2rem .6rem;border-radius:4px;display:inline-block;margin-bottom:.5rem;font-weight:600}
+    .equipment-card h3{font-size:1.1rem;margin-bottom:.5rem;text-align:right}
+    .equipment-card p{font-size:.9rem;margin-bottom:1rem;flex-grow:1;text-align:right}
+    .equipment-card .action-btn{
+      background:linear-gradient(135deg,var(--clr-gradient-from),var(--clr-gradient-to));
+      color:#fff;
+      text-align:center;
+      padding:.5rem;
+      border-radius:6px;
+      font-weight:600;
+      font-size:.85rem
+    }
+    .equipment-card .action-btn:hover{opacity:.9}
+
+    /* Why Us */
+    .why-us{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+    .why-card{background:var(--clr-dark);padding:1.5rem;border-radius:var(--radius);text-align:center;border:1px solid #2a1a3d;transition:var(--transition)}
+    .why-card:hover{border-color:var(--clr-primary);transform:translateY(-3px)}
+    .why-card i{font-size:2rem;margin-bottom:.75rem;color:var(--clr-primary)}
+    .why-card h4{font-size:1.05rem;margin-bottom:.5rem;text-align:right}
+
+    /* Footer */
+    footer{background:#0a0514;padding:2rem 1rem;text-align:center;border-top:1px solid #2a1a3d}
+    footer p{font-size:.9rem}
+    footer .phone{color:var(--clr-primary);font-weight:700}
+    .back-to-top{position:fixed;bottom:20px;right:20px;background:var(--clr-primary);color:var(--clr-dark);width:45px;height:45px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;cursor:pointer;box-shadow:0 4px 15px rgba(255,140,0,.35);transition:var(--transition);z-index:1000}
+    .back-to-top:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(255,140,0,.5)}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>ديارنا الحديثة</h1>
+    <p>الخيار الأول في المملكة 🇸🇦<br>تأجير وبيع سيزر لفت ورافعات شوكية بأفضل الأسعار<br>معدات حديثة | فحص دوري شامل | توصيل سريع للرياض، جدة، الدمام وجميع المدن</p>
+    <div class="cta-group">
+      <a href="tel:0536089153" class="btn"><span>📞</span> اتصل الآن</a>
+      <a href="https://wa.me/966536089153" target="_blank" class="btn secondary"><span>💬</span> واتساب</a>
+    </div>
+    <p class="flag">🚩 توصيل سريع للرياض، جدة، الدمام وجميع المدن</p>
+  </header>
+
+  <!-- Equipments -->
+  <section>
+    <h2 class="section-title">المعدات المتاحة للتأجير والبيع</h2>
+    <div class="equipments">
+      <article class="equipment-card">
+        <img src="https://tajeermodat.carrd.co/assets/images/image03.jpg?v=f5dc9cfb" alt="سيزر لفت كهربائي (Genie) - تأجير في الرياض/السعودية - ديارنا الحديثة">
+        <div class="card-body">
+          <span class="tag">تأجير / بيع</span>
+          <h3>سيزر لفت كهربائي (Genie)</h3>
+          <p>مثالي للأعمال الداخلية والمستودعات والأرضيات المستوية.</p>
+          <a href="tel:0536089153" class="action-btn">اطلب السعر / تواصل</a>
+        </div>
+      </article>
+      <article class="equipment-card">
+        <img src="https://tajeermodat02.carrd.co/assets/images/image02.jpg?v=4610520a" alt="رافعات شوكية (Forklifts) - تأجير في الرياض/السعودية - ديارنا الحديثة">
+        <div class="card-body">
+          <span class="tag">تأجير / بيع</span>
+          <h3>رافعات شوكية (Forklifts)</h3>
+          <p>متوفرة بجميع الأحجام للتخزين والتحميل والتنزيل.</p>
+          <a href="tel:0536089153" class="action-btn">اطلب السعر / تواصل</a>
+        </div>
+      </article>
+      <article class="equipment-card">
+        <img src="https://www.mifflintownrental.com/wp-content/uploads/Articulating-Man-Lift-45-1.jpg" alt="مان لفت (Man Lift) - تأجير في الرياض/السعودية - ديارنا الحديثة">
+        <div class="card-body">
+          <span class="tag">تأجير / بيع</span>
+          <h3>مان لفت (Man Lift)</h3>
+          <p>متوفرة بمقاسات مختلفة لأعمال الرفع في الأماكن الضيقة.</p>
+          <a href="tel:0536089153" class="action-btn">اطلب السعر / تواصل</a>
+        </div>
+      </article>
+      <article class="equipment-card">
+        <img src="https://proliftcrane.com/wp-content/uploads/all-terrain-crane.jpg" alt="كرين (Crane) - تأجير في الرياض/السعودية - ديارنا الحديثة">
+        <div class="card-body">
+          <span class="tag">تأجير / بيع</span>
+          <h3>كرين (Crane)</h3>
+          <p>كراكات متعددة الأحجام للرفع الثقيل في المواقع.</p>
+          <a href="tel:0536089153" class="action-btn">اطلب السعر / تواصل</a>
+        </div>
+      </article>
+      <article class="equipment-card">
+        <img src="https://tajeermodat.com/wp-content/uploads/2024/10/شيول-300x228.webp" alt="شيول (Wheel Loader) - تأجير في الرياض/السعودية - ديارنا الحديثة">
+        <div class="card-body">
+          <span class="tag">تأجير / بيع</span>
+          <h3>شـيــول (Wheel Loader)</h3>
+          <p>شيولات بضغاط لاستخدامات البناء والتسوية.</p>
+          <a href="tel:0536089153" class="action-btn">اطلب السعر / تواصل</a>
+        </div>
+      </article>
+      <article class="equipment-card">
+        <img src="https://tajeermodat.com/wp-content/uploads/2024/10/بوكلين-300x228.webp" alt="بوكلين (Backhoe Loader) - تأجير في الرياض/السعودية - ديارنا الحديثة">
+        <div class="card-body">
+          <span class="tag">تأجير / بيع</span>
+          <h3>بوكلين (Backhoe Loader)</h3>
+          <p>معدات 2 في 1 للحفر والتحميل.</p>
+          <a href="tel:0536089153" class="action-btn">اطلب السعر / تواصل</a>
+        </div>
+      </article>
+      <article class="equipment-card">
+        <img src="https://tajeermodat.com/wp-content/uploads/2024/10/رصاصة-300x228.webp" alt="رصاصة (Compactor) - تأجير في الرياض/السعودية - ديارنا الحديثة">
+        <div class="card-body">
+          <span class="tag">تأجير / بيع</span>
+          <h3>رصـاصــة (Compactor)</h3>
+          <p>آلات الدك والضغط للأرضيات والتربة.</p>
+          <a href="tel:0536089153" class="action-btn">اطلب السعر / تواصل</a>
+        </div>
+      </article>
+      <article class="equipment-card">
+        <img src="https://tajeermodat.com/wp-content/uploads/2024/10/gret4t5-300x228.png" alt="بوبكات (Bobcat) - تأجير في الرياض/السعودية - ديارنا الحديثة">
+        <div class="card-body">
+          <span class="tag">تأجير / بيع</span>
+          <h3>بوبـكـــات (Bobcat)</h3>
+          <p>آلات صغيرة متعددة الاستخدامات للمواقع الضيقة.</p>
+          <a href="tel:0536089153" class="action-btn">اطلب السعر / تواصل</a>
+        </div>
+      </article>
+      <article class="equipment-card">
+        <img src="https://tajeermodat.com/wp-content/uploads/2024/10/رافعة-تلسكوبية-لودر-1-300x228.png" alt="رافعة تلسكوبية لودر (Telehandler) - تأجير في الرياض/السعودية - ديارنا الحديثة">
+        <div class="card-body">
+          <span class="tag">تأجير / بيع</span>
+          <h3>رافعة تلسكوبية لودر (Telehandler)</h3>
+          <p>تلدرز متعددة الوظائف للرفع والنقل على ارتفاعات مختلفة.</p>
+          <a href="tel:0536089153" class="action-btn">اطلب السعر / تواصل</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section>
+    <h2 class="section-title">لماذا تختارنا</h2>
+    <p style="max-width:700px;margin:auto;text-align:center">نقدم حلول رفع ومناولة متكاملة تضمن استمرارية عملك بكفاءة عالية</p>
+    <div class="why-us">
+      <div class="why-card">
+        <i>🛡️</i>
+        <h4>معدات حديثة ومفحوصة</h4>
+        <p style="font-size:.85rem">جميع معداتنا تخضع لفحص دوري صارم لضمان أعلى معايير السلامة والكفاءة في الموقع.</p>
+      </div>
+      <div class="why-card">
+        <i>💰</i>
+        <h4>أسعار تنافسية</h4>
+        <p style="font-size:.85rem">نقدم أفضل خطط الأسعار للإيجار الشهري، وعروض خاصة للمشاريع الكبيرة.</p>
+      </div>
+      <div class="why-card">
+        <i>🚚</i>
+        <h4>توصيل سريع</h4>
+        <p style="font-size:.85rem">أسطول نقل خاص لتوصيل المعدات لمواقع العمل في جميع أنحاء المملكة خلال 24 ساعة.</p>
+      </div>
+      <div class="why-card">
+        <i>🔧</i>
+        <h4>دعم فني مستمر</h4>
+        <p style="font-size:.85rem">فريق صيانة متنقل جاهز للتدخل السريع وإصلاح أي أعطال طارئة في موقع العمل.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>جميع الحقوق محفوظة 2025 - <span class="phone">ديارنا الحديثة</span></p>
+    <p><span class="phone">0536089153</span> | <a href="https://wa.me/966536089153" target="_blank">واتساب</a></p>
+  </footer>
+
+  <!-- Back to top -->
+  <div class="back-to-top" id="backToTop">↑</div>
+
+  <script>
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.style.opacity = '1';
+        backToTop.style.pointerEvents = 'auto';
+      } else {
+        backToTop.style.opacity = '0';
+        backToTop.style.pointerEvents = 'none';
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    backToTop.style.opacity = '0';
+    backToTop.style.transition = 'opacity .3s ease';
+  </script>
+
+</body>
+</html>
