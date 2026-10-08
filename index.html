@@ -448,6 +448,48 @@
       width: 100%;
       border-collapse: collapse;
       margin: 1.5rem 0;
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+    }
+
+    .content-block table thead,
+    .content-block table tbody {
+      display: table;
+      width: 100%;
+      min-width: 600px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+      border: 1px solid var(--clr-border);
+      position: relative;
+    }
+
+    .table-wrapper::after {
+      content: '← اسحب للمزيد →';
+      display: block;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--clr-text-light);
+      background: var(--clr-light-gray);
+      border-top: 1px solid var(--clr-border);
+    }
+
+    .table-wrapper table {
+      margin: 0;
+      border: none;
+    }
+
+    @media (min-width: 769px) {
+      .table-wrapper::after {
+        display: none;
+      }
     }
 
     .content-block table th,
@@ -1435,54 +1477,56 @@
       <div class="content-block" style="margin-top: 2rem;">
         <h2>مقارنة بين أنواع المعدات المتاحة</h2>
         <p>للمساعدة في اختيار المعدة المناسبة، إليك جدول مقارنة بين أبرز أنواع المعدات التي نقدمها:</p>
-        <table>
-          <thead>
-            <tr>
-              <th>نوع المعدة</th>
-              <th>حمولة</th>
-              <th>الارتفاع/المسافة</th>
-              <th>مصدر الطاقة</th>
-              <th>أمثلة الاستخدام</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>سيزر لفت</td>
-              <td>250-500 كج</td>
-              <td>6-14 متر</td>
-              <td>كهرباء</td>
-              <td>الأعمال الداخلية، المستودعات</td>
-            </tr>
-            <tr>
-              <td>رافعات شوكية</td>
-              <td>1.5-10 طن</td>
-              <td>2-8 مترات</td>
-              <td>ديزل / كهرباء</td>
-              <td>التخزين، التحميل والتنزيل</td>
-            </tr>
-            <tr>
-              <td>مان لفت</td>
-              <td>200-450 كج</td>
-              <td>8-22 متر</td>
-              <td>كهرباء / ديزل</td>
-              <td>الأعمال الرأسية، الصيانة</td>
-            </tr>
-            <tr>
-              <td>كرين</td>
-              <td>20-50 طن</td>
-              <td>20-70 متر</td>
-              <td>ديزل / كهرباء</td>
-              <td>البناء، رفع الأحمال الثقيلة</td>
-            </tr>
-            <tr>
-              <td>بوبكات</td>
-              <td>500 كج - 2.5 طن</td>
-              <td>متعدد الاستخدامات</td>
-              <td>ديزل / كهرباء</td>
-              <td>الأعمال الدقيقة، الحفر الصغير</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-wrapper">
+          <table style="min-width: 650px;">
+            <thead>
+              <tr>
+                <th>نوع المعدة</th>
+                <th>حمولة</th>
+                <th>الارتفاع/المسافة</th>
+                <th>مصدر الطاقة</th>
+                <th>أمثلة الاستخدام</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>سيزر لفت</td>
+                <td>250-500 كج</td>
+                <td>6-14 متر</td>
+                <td>كهرباء</td>
+                <td>الأعمال الداخلية، المستودعات</td>
+              </tr>
+              <tr>
+                <td>رافعات شوكية</td>
+                <td>1.5-10 طن</td>
+                <td>2-8 مترات</td>
+                <td>ديزل / كهرباء</td>
+                <td>التخزين، التحميل والتنزيل</td>
+              </tr>
+              <tr>
+                <td>مان لفت</td>
+                <td>200-450 كج</td>
+                <td>8-22 متر</td>
+                <td>كهرباء / ديزل</td>
+                <td>الأعمال الرأسية، الصيانة</td>
+              </tr>
+              <tr>
+                <td>كرين</td>
+                <td>20-50 طن</td>
+                <td>20-70 متر</td>
+                <td>ديزل / كهرباء</td>
+                <td>البناء، رفع الأحمال الثقيلة</td>
+              </tr>
+              <tr>
+                <td>بوبكات</td>
+                <td>500 كج - 2.5 طن</td>
+                <td>متعدد الاستخدامات</td>
+                <td>ديزل / كهرباء</td>
+                <td>الأعمال الدقيقة، الحفر الصغير</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <!-- Practical Example -->
